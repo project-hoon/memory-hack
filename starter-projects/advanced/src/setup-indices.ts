@@ -40,7 +40,9 @@ async function main() {
       properties: {
         memory_id: { type: "keyword" },
         agent: { type: "keyword" },
-        type: { type: "keyword" }, // decision | pattern | context | feedback
+        // Core live-memory types plus imported history: issue | action |
+        // proposal | update.
+        type: { type: "keyword" },
         category: { type: "keyword" },
         title: { type: "text", fields: { keyword: { type: "keyword" } } },
         title_semantic: semanticField,

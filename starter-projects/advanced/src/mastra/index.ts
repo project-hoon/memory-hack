@@ -11,11 +11,22 @@
  */
 import { Mastra } from "@mastra/core";
 import { Observability, MastraStorageExporter } from "@mastra/observability";
-import { advancedMemoryAgent } from "./agents/advanced-agent";
+import {
+  advancedMemoryAgent,
+  founderLongTermMemoryAgent,
+  founderNoMemoryAgent,
+} from "./agents/advanced-agent";
 import { movieRecBare, movieRecCatalog, movieRecPersonal } from "./agents/movie-agents";
 
 export const mastra = new Mastra({
-  agents: { advancedMemoryAgent, movieRecBare, movieRecCatalog, movieRecPersonal },
+  agents: {
+    founderNoMemoryAgent,
+    founderLongTermMemoryAgent,
+    advancedMemoryAgent,
+    movieRecBare,
+    movieRecCatalog,
+    movieRecPersonal,
+  },
   // Records agent traces (LLM turns, tool calls, ES|QL queries) so they show
   // up in Studio's Traces view - the demo and the judging rubric both use it.
   observability: new Observability({

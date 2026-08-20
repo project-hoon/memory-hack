@@ -103,7 +103,7 @@ Three routes in, by what your source looks like:
 2. **Temporal spread measured in months, not days.** With a 45-day decay window, memories from last week all score alike. The shipped datasets span ~330 days - aim for that shape.
 3. **At least one reversal** - a decision, preference, or fact that *changed* ("we picked X" ... months later ... "X is superseded, now Y"). Without one, decay reorders nothing visible.
 4. **Write the stale answer to *deserve* to win.** Give superseded entries longer, richer rationale than their replacements (see `sample-data/*.json`) - undecayed recall then confidently returns the wrong answer, which is your before/after.
-5. Keep `type` one of `decision | pattern | context | feedback`, and use `tags` - they feed the BM25 branch.
+5. For new live memories, keep `type` one of `decision | pattern | context | feedback`. The sample importer also accepts `issue | action | proposal | update` so historical meeting logs retain their source meaning. Use `tags` - they feed the BM25 branch.
 
 **Fast sources:** your team's real ADR folder or changelog, any active repo's closed issues (exact IDs in issue titles also show off the keyword branch), personal decision journals or notes exports, or synthetic data written with an LLM - just keep the timestamps honest to rules 1-3.
 

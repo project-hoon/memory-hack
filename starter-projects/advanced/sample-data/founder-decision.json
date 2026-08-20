@@ -1,0 +1,1909 @@
+[
+  {
+    "type": "decision",
+    "title": "Focus the next service on self-served B2C",
+    "content": "The team decided that the next service should focus on B2C rather than B2B or enterprise customers, with every part of the product delivered through a self-served model.",
+    "tags": [
+      "b2c",
+      "self-service",
+      "market strategy"
+    ],
+    "ageDays": 233
+  },
+  {
+    "type": "issue",
+    "title": "The next service needs a clear north-star metric",
+    "content": "The team identified the absence of a clear north-star metric as an unresolved issue for the next service.",
+    "tags": [
+      "north-star metric",
+      "product strategy"
+    ],
+    "ageDays": 233
+  },
+  {
+    "type": "action",
+    "title": "Research U.S. finance, accounting, and Excel-heavy workflows",
+    "content": "The team needs to investigate how finance and accounting work in the United States, which roles use Excel most often, whether those workflows are sufficiently difficult or frequent for AI assistance, the size of each field, and whether data analysis is the best opportunity.",
+    "tags": [
+      "u.s. finance",
+      "accounting workflows",
+      "excel research",
+      "market validation"
+    ],
+    "ageDays": 219
+  },
+  {
+    "type": "decision",
+    "title": "Adopt the vision Unlock human minds, seamlessly",
+    "content": "The vision selected for the new product direction is: Unlock human minds, seamlessly.",
+    "tags": [
+      "company vision",
+      "human minds"
+    ],
+    "ageDays": 219
+  },
+  {
+    "type": "decision",
+    "title": "Do not build the new Excel product on top of inline AI",
+    "content": "The team decided to start the new Excel product from scratch rather than add it to inline AI because interviewed Excel users generally had no prior inline AI usage and the existing inline AI customer base was not the intended target audience.",
+    "tags": [
+      "product restart",
+      "inline ai",
+      "excel users"
+    ],
+    "ageDays": 219
+  },
+  {
+    "type": "decision",
+    "title": "Keep existing products running without prioritizing a sale",
+    "content": "The team determined that selling inline AI or the student-record product was not central to the company's direction. The student-record product would remain listed, while the other existing services would be maintained without customer support and otherwise deprioritized.",
+    "tags": [
+      "legacy products",
+      "student records",
+      "customer support",
+      "product sale"
+    ],
+    "ageDays": 219
+  },
+  {
+    "type": "decision",
+    "title": "Target the U.S. Excel workflow market with a new product",
+    "content": "The team chose the United States as the target market and Excel as the target tool. The initial workflow is Raw Data -> Data Cleansing -> Data Analysis -> Report or Dashboard, with the workflow and tool taking precedence over selecting a narrow consumer persona.",
+    "tags": [
+      "u.s. market",
+      "excel",
+      "data analysis",
+      "target workflow"
+    ],
+    "ageDays": 219
+  },
+  {
+    "type": "action",
+    "title": "Chang-sik to learn the Claude API and agent development stack",
+    "content": "Chang-sik will study the existing code and API structure through the Claude API documentation, use Claude Code during the work to learn its structure and workflow, review the agent development references, and watch the AI Engineer course materials.",
+    "tags": [
+      "claude api",
+      "claude code",
+      "agent development",
+      "chang-sik"
+    ],
+    "ageDays": 212
+  },
+  {
+    "type": "action",
+    "title": "Sang-yeon to conduct Excel user research",
+    "content": "Sang-yeon will investigate relevant Reddit communities and schedule an interview about Excel use.",
+    "tags": [
+      "excel users",
+      "reddit research",
+      "user interview",
+      "sang-yeon"
+    ],
+    "ageDays": 212
+  },
+  {
+    "type": "action",
+    "title": "Sang-yeon to define the PO role and write a business one-pager",
+    "content": "Sang-yeon will define the product owner role and prepare a one-page business strategy document.",
+    "tags": [
+      "product owner",
+      "business strategy",
+      "one-pager",
+      "sang-yeon"
+    ],
+    "ageDays": 212
+  },
+  {
+    "type": "issue",
+    "title": "Poetry setup hit WinError 193 on Windows",
+    "content": "Chang-sik encountered WinError 193, stating that the target is not a valid Win32 application, while setting up Poetry.",
+    "tags": [
+      "poetry",
+      "windows",
+      "winerror 193"
+    ],
+    "ageDays": 212
+  },
+  {
+    "type": "action",
+    "title": "Establish the Electron and agent architecture by January 30",
+    "content": "The team planned to establish the Electron application and core agent architecture by January 30, including agent execution, context management, human-in-the-loop controls, process communication, testing, development logs, and a written specification.",
+    "tags": [
+      "electron",
+      "agent architecture",
+      "january 30",
+      "human in the loop"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "action",
+    "title": "Implement authentication, billing, and local file search in February",
+    "content": "The roadmap called for selecting and implementing authentication around February 3, researching local file search and extension-specific readers by February 9, and building Paddle-based subscription and credit billing after the payment policy was finalized.",
+    "tags": [
+      "authentication",
+      "paddle billing",
+      "local file search",
+      "february roadmap"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "decision",
+    "title": "Combine Excel editing with local file search and context",
+    "content": "The initial product direction combined the planned Excel agent with local file search and opening, web search, and contextual use of PDF, Word, and other files. Editing would remain focused on Excel while other formats would supply context.",
+    "tags": [
+      "excel agent",
+      "local file search",
+      "web search",
+      "document context"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "decision",
+    "title": "Define Cicely AI as a desktop-native AI coworker",
+    "content": "The long-term product vision was set as an AI coworker that lives on the user's computer. The initial delivery was defined as a desktop-native AI coworker for Excel.",
+    "tags": [
+      "cicely ai",
+      "product vision",
+      "desktop native",
+      "excel coworker"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "decision",
+    "title": "Make autonomy, observability, teamwork, and auditability core agent principles",
+    "content": "The agent was required to act autonomously while communicating its progress, support human-in-the-loop questions and tool approval, and provide checkpoints and reversion so its work could be trusted and audited.",
+    "tags": [
+      "agent principles",
+      "autonomy",
+      "human in the loop",
+      "auditability"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "decision",
+    "title": "Name the product cicely.ai",
+    "content": "After comparing the final candidates against pronunciation, search uniqueness, domain availability, keyword competition, autocomplete, and trademark criteria, the team selected cicely.ai as the product name.",
+    "tags": [
+      "cicely.ai",
+      "product name",
+      "branding",
+      "domain"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "decision",
+    "title": "Set a 90 percent payment-retention target and June revenue goal",
+    "content": "The north-star targets were 90 percent payment retention and USD 1 million in MRR by June, supported by targets of 25,000 subscribers, 500,000 sign-ups, and 5 million visitors.",
+    "tags": [
+      "payment retention",
+      "mrr",
+      "north-star metrics",
+      "june target"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "decision",
+    "title": "Target the United States while publishing SEO content in both languages",
+    "content": "The team decided to target only the United States for the product while continuing to publish SEO content in both Korean and English.",
+    "tags": [
+      "united states",
+      "target market",
+      "seo",
+      "bilingual content"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "decision",
+    "title": "Target white-collar workers who use Excel every day",
+    "content": "The team chose general white-collar workers who use Excel daily, including FP&A, operations, data analysis, managerial accounting, and finance, rather than limiting the initial target to Excel power users or a single profession.",
+    "tags": [
+      "target users",
+      "white-collar workers",
+      "excel",
+      "fp&a"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "decision",
+    "title": "Use a self-served product-led go-to-market strategy",
+    "content": "The team decided to remain self-served and product-driven, develop through a consumer feedback loop and building in public, and avoid custom feature work, outbound sales, and prematurely selling bespoke implementations.",
+    "tags": [
+      "product-led growth",
+      "self-service",
+      "build in public",
+      "go-to-market"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "issue",
+    "title": "Cicely AI premortem identified retention, distribution, reliability, and UX risks",
+    "content": "The premortem highlighted four major failure modes: daily Excel users may not need AI daily, organic distribution may fail, version differences or agent loops may corrupt work, and the product may feel too complex or less appealing than fully autonomous workers.",
+    "tags": [
+      "premortem",
+      "retention",
+      "distribution",
+      "reliability",
+      "ux"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "issue",
+    "title": "Local-file telemetry creates a serious privacy risk",
+    "content": "The logging plan identified company spreadsheets and original files as particularly sensitive. Product analytics, agent traces, prompts, and failures were needed, but any file collection required an explicit mode, limited sampling, or structured XML rather than indiscriminate upload.",
+    "tags": [
+      "privacy",
+      "local files",
+      "telemetry",
+      "data collection"
+    ],
+    "ageDays": 209
+  },
+  {
+    "type": "action",
+    "title": "Build agent and Excel evaluation systems with small batches",
+    "content": "The team will build agent and Excel evaluation systems using unit-test-style checks and start with small evaluation batches before scaling them up.",
+    "tags": [
+      "evaluation",
+      "unit testing",
+      "excel"
+    ],
+    "ageDays": 206
+  },
+  {
+    "type": "action",
+    "title": "Design payment, authentication, and settings before the main UX",
+    "content": "The team will ask 성현 to design the payment, authentication, and settings flows by February 9, then implement the main chat and agent UX as a functional skeleton before polishing the UI.",
+    "tags": [
+      "ui/ux",
+      "payment",
+      "authentication",
+      "settings"
+    ],
+    "ageDays": 206
+  },
+  {
+    "type": "action",
+    "title": "Prepare marketing and launch operations before payment ships",
+    "content": "The team will begin email marketing and CRM preparation before the payment system is finished, and will also prepare the website, demo video, build-in-public activity, customer-support channel, and QA sheet.",
+    "tags": [
+      "crm",
+      "email marketing",
+      "launch"
+    ],
+    "ageDays": 206
+  },
+  {
+    "type": "decision",
+    "title": "Design the Excel agent for multi-workbook use from the start",
+    "content": "The team divided agent development into single-workbook Excel problem solving, multi-workbook integration and workflow automation, and local file search, and decided to account for multi-workbook support from the initial architecture.",
+    "tags": [
+      "excel",
+      "multi-workbook",
+      "agent architecture"
+    ],
+    "ageDays": 206
+  },
+  {
+    "type": "decision",
+    "title": "Manage Cicely AI Version 1 as a Linear initiative",
+    "content": "The team decided to use Linear's timeline view, make Building Cicely AI Version 1 the top-level initiative, organize the work into child projects, and use milestones to group project work.",
+    "tags": [
+      "Linear",
+      "project management",
+      "Cicely AI"
+    ],
+    "ageDays": 206
+  },
+  {
+    "type": "proposal",
+    "title": "Protect original files with checkpoints and revert support",
+    "content": "The proposed Cicely AI UX would provide checkpoints and file-backup-based revert behavior while guiding operations toward a flow that does not modify the original file directly.",
+    "tags": [
+      "file safety",
+      "checkpoints",
+      "revert"
+    ],
+    "ageDays": 206
+  },
+  {
+    "type": "update",
+    "title": "Cicely AI Version 1 delivery plan targets February 27",
+    "content": "The Cicely AI Version 1 plan set February 27 as the final target, with local file search targeted for February 8, payment and UI work in February, roughly two weeks of QA, and beta distribution in the final week.",
+    "tags": [
+      "Cicely AI",
+      "release plan",
+      "beta",
+      "qa"
+    ],
+    "ageDays": 206
+  },
+  {
+    "type": "action",
+    "title": "Complete the initial environment setup by Thursday",
+    "content": "The team will complete the initial development environment by Thursday, then implement local file search and web search and review the remaining AI-agent issues.",
+    "tags": [
+      "environment setup",
+      "local search",
+      "web search",
+      "ai agent"
+    ],
+    "ageDays": 199
+  },
+  {
+    "type": "action",
+    "title": "Investigate active Excel communities and creator outreach",
+    "content": "The team will investigate and join active Excel-related Discord servers and contact the identified YouTube creator who publishes Excel content.",
+    "tags": [
+      "excel community",
+      "discord",
+      "youtube creator",
+      "outreach"
+    ],
+    "ageDays": 199
+  },
+  {
+    "type": "action",
+    "title": "Start audience discovery and interaction on X and Reddit",
+    "content": "The team will begin identifying the target audience on X and Reddit, participate through comments and discussions, and continuously collect complaints and needs rather than treating the work as one-way content publishing.",
+    "tags": [
+      "audience discovery",
+      "x",
+      "reddit",
+      "user needs"
+    ],
+    "ageDays": 199
+  },
+  {
+    "type": "decision",
+    "title": "Defer Langfuse integration until the production environment",
+    "content": "The team decided that Langfuse tracing could be postponed until the production environment was being built because it was not required for the immediate implementation and improvement work.",
+    "tags": [
+      "langfuse",
+      "tracing",
+      "production",
+      "observability"
+    ],
+    "ageDays": 199
+  },
+  {
+    "type": "decision",
+    "title": "Focus community work on X, Reddit, and existing Discord servers",
+    "content": "The team selected X and Reddit as the primary channels, deprioritized LinkedIn and Threads, and chose to join active Excel-related Discord communities instead of creating a new Discord server immediately.",
+    "tags": [
+      "x",
+      "reddit",
+      "discord",
+      "community channels"
+    ],
+    "ageDays": 199
+  },
+  {
+    "type": "decision",
+    "title": "Prioritize local search, web search, authentication, payments, and LLM request design",
+    "content": "The development sequence was set as initial environment setup, local file search, web search, DDD-based authentication and payment systems, and LLM request design. The backend migration to C3 was also part of this plan.",
+    "tags": [
+      "development roadmap",
+      "local search",
+      "authentication",
+      "c3 backend"
+    ],
+    "ageDays": 199
+  },
+  {
+    "type": "decision",
+    "title": "Use founder profiles for build-in-public marketing before paid influencers",
+    "content": "The team decided that paid influencer marketing was premature. Sang-yeon and Chang-sik will participate in communities through their personal profiles, build trust through authentic two-way interaction, learn user pain points, and introduce Cicely AI only after establishing credibility.",
+    "tags": [
+      "build in public",
+      "founder marketing",
+      "community",
+      "cicely ai"
+    ],
+    "ageDays": 199
+  },
+  {
+    "type": "update",
+    "title": "Cicely AI homepage and demo were targeted for mid-to-late February",
+    "content": "The homepage and product demo were expected in mid-to-late February. Until then, community participation and social engagement were prioritized over collecting a waitlist.",
+    "tags": [
+      "cicely ai",
+      "homepage",
+      "product demo",
+      "launch timeline"
+    ],
+    "ageDays": 199
+  },
+  {
+    "type": "action",
+    "title": "Connect product telemetry and lifecycle messaging",
+    "content": "The team will connect Mixpanel user events, Langfuse LLM traces and prompts, error logging, email CRM, Loops, ChannelTalk, and Contact Us before launch.",
+    "tags": [
+      "Mixpanel",
+      "Langfuse",
+      "crm",
+      "telemetry"
+    ],
+    "ageDays": 178
+  },
+  {
+    "type": "action",
+    "title": "Define user flows for 429 and 402 payment errors",
+    "content": "The team will implement UX for 429 usage-limit errors with a subscription nudge, and for 402 payment failures with guidance to change the payment method or move to the free plan.",
+    "tags": [
+      "billing",
+      "error handling",
+      "subscription"
+    ],
+    "ageDays": 178
+  },
+  {
+    "type": "action",
+    "title": "Finish the Cicely Version 1 build before QA and release",
+    "content": "The team planned to finish UI and UX, agent evaluation changes, settings and preferences, payment-limit handling, build and auto-update work, and telemetry by Friday, then run QA and target release the following week.",
+    "tags": [
+      "release plan",
+      "qa",
+      "Cicely AI"
+    ],
+    "ageDays": 178
+  },
+  {
+    "type": "action",
+    "title": "Split ownership between QA and distribution",
+    "content": "찬용 will prepare the QA sheet and verify agent-cancellation UX, while 이상연 will divide time equally between evaluation work and distribution after finishing the remaining UI and UX work.",
+    "tags": [
+      "qa",
+      "distribution",
+      "ownership"
+    ],
+    "ageDays": 178
+  },
+  {
+    "type": "decision",
+    "title": "Inject saved preferences from the backend",
+    "content": "The backend will retrieve each user's saved preferences and combine them with the system prompt for LLM calls, using a flow similar to the initial user status loaded at the start of a cycle.",
+    "tags": [
+      "user preferences",
+      "system prompt",
+      "backend"
+    ],
+    "ageDays": 178
+  },
+  {
+    "type": "decision",
+    "title": "Track usage by frontend-generated cycle IDs",
+    "content": "The new usage model uses a cycle ID generated by the frontend and required by every metered API call. Usage Records track cycle state, cost, refunds, and total usage, while Call Records track individual request IDs.",
+    "tags": [
+      "usage metering",
+      "cycle id",
+      "database"
+    ],
+    "ageDays": 178
+  },
+  {
+    "type": "issue",
+    "title": "Distribution is the largest launch uncertainty",
+    "content": "The team identified distribution as the least certain part of the launch. The beta goal was 100 testers, but only about six had been secured, and the team lacked confidence about channels and advertising budget.",
+    "tags": [
+      "distribution",
+      "beta testing",
+      "go-to-market"
+    ],
+    "ageDays": 178
+  },
+  {
+    "type": "proposal",
+    "title": "Delegate local file exploration to a specialized subagent",
+    "content": "The team documented a proposal for an orchestrator to delegate local file discovery to a local_file_explorer subagent, which would use restricted local paths, return a structured Markdown report with references, and keep its internal context separate from the main agent.",
+    "tags": [
+      "subagent",
+      "local files",
+      "orchestration"
+    ],
+    "ageDays": 178
+  },
+  {
+    "type": "proposal",
+    "title": "Store agent memories as hidden Markdown files",
+    "content": "The team proposed turning the unused Write or Take Note tool into a background Write Memory tool that stores durable discoveries, preferences, and work patterns in Markdown without rendering them in the UI. The same approach could move highly specific instructions out of a system prompt that currently exceeds 30,000 tokens.",
+    "tags": [
+      "agent memory",
+      "markdown",
+      "system prompt"
+    ],
+    "ageDays": 178
+  },
+  {
+    "type": "update",
+    "title": "MRR reached KRW 20.2 million including B2B",
+    "content": "The team reported monthly recurring revenue of KRW 20.2 million when B2B revenue was included.",
+    "tags": [
+      "mrr",
+      "revenue",
+      "b2b"
+    ],
+    "ageDays": 178
+  },
+  {
+    "type": "action",
+    "title": "Build launch assets and recruit 100 beta testers",
+    "content": "The distribution plan is to build and polish the website, produce a promotional video and a single guide video covering about four use cases, recruit 100 beta testers, and test ads, lead generation, and cold email.",
+    "tags": [
+      "beta testing",
+      "distribution",
+      "content marketing"
+    ],
+    "ageDays": 171
+  },
+  {
+    "type": "update",
+    "title": "Define Mixpanel events across the full product journey",
+    "content": "The product analytics plan covers app and authentication events, document pairing, messaging and streaming, navigation, uploads and citations, subscription and credit behavior, invitations, mode changes, HWP compatibility alerts, restart actions, tool execution, and HITL approvals. Message history remains stored in MongoDB.",
+    "tags": [
+      "Mixpanel",
+      "event tracking",
+      "analytics"
+    ],
+    "ageDays": 171
+  },
+  {
+    "type": "decision",
+    "title": "Differentiate inline AI through interactive in-place document editing",
+    "content": "inline AI should be presented as editing the document that is already open instead of repeatedly generating new files. Users can watch changes, give feedback, and finish long structured reports, proposals, and plans with greater confidence in the final deliverable.",
+    "tags": [
+      "interactive editing",
+      "in-place editing",
+      "document workflow",
+      "professional users"
+    ],
+    "ageDays": 143
+  },
+  {
+    "type": "decision",
+    "title": "Make local processing and data non-retention core privacy claims",
+    "content": "The privacy message for inline AI is that chat history and the application's core code and logic stay on the user's computer, files are processed locally instead of uploaded for server-side preprocessing, and prompts sent to OpenAI or Anthropic are covered by Zero Data Retention and deleted after processing.",
+    "tags": [
+      "data privacy",
+      "local processing",
+      "zero data retention",
+      "zdr"
+    ],
+    "ageDays": 143
+  },
+  {
+    "type": "decision",
+    "title": "Position inline AI as a local AI coworker for professionals",
+    "content": "The chosen positioning for inline AI is a local AI assistant, or AI coworker, for professionals that can work autonomously while remaining controllable by the user.",
+    "tags": [
+      "inline ai",
+      "ai coworker",
+      "local ai",
+      "professionals"
+    ],
+    "ageDays": 143
+  },
+  {
+    "type": "update",
+    "title": "Documented inline AI file support as of March 29, 2026",
+    "content": "inline AI can find, open, read, edit, and finish files on the user's computer. The documented readable formats are XLSX, XLSM, XLTX, XLTM, XLS, XLSB, PPTX, PPT, DOCX, PDF, CSV, PNG, JPG, JPEG, HWP, and HWPX. The editable formats are the Excel variants plus HWP and HWPX, with PPT and Word editing planned later.",
+    "tags": [
+      "file formats",
+      "local files",
+      "document editing",
+      "hwp"
+    ],
+    "ageDays": 143
+  },
+  {
+    "type": "update",
+    "title": "One inline AI conversation can control multiple documents",
+    "content": "inline AI can recognize and work across multiple open HWP and Excel documents in one conversation, unlike document-scoped assistants such as Microsoft Copilot or Claude for Excel.",
+    "tags": [
+      "multi-document",
+      "hwp",
+      "excel",
+      "document control"
+    ],
+    "ageDays": 143
+  },
+  {
+    "type": "update",
+    "title": "inline AI supports three validated AI model options",
+    "content": "As of March 29, 2026, the documented supported models were GPT-5.4, Claude Sonnet 4.6, and Claude Opus 4.6. Before releasing a model integration, the team runs quantitative and qualitative tests on 700 Excel files and 300 HWP documents.",
+    "tags": [
+      "ai models",
+      "model evaluation",
+      "gpt-5.4",
+      "claude"
+    ],
+    "ageDays": 143
+  },
+  {
+    "type": "action",
+    "title": "Buy a Windows laptop for on-premises development",
+    "content": "The team plans to purchase a Windows laptop in the KRW 2-3 million range for on-premises installation and development work.",
+    "tags": [
+      "windows laptop",
+      "on-premises",
+      "development hardware"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "action",
+    "title": "Complete the second stabilization pass by April 24",
+    "content": "The second stabilization pass is targeted for April 24 and should prioritize the missing-font problem, repeated updater behavior, application shutdown during startup or navigation, and review of recurring-payment failure handling; lower-priority enhancements were moved to a later backlog.",
+    "tags": [
+      "stabilization",
+      "font issue",
+      "updater",
+      "startup crash",
+      "billing failure"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "action",
+    "title": "Finish and deploy the website and analytics foundation by April 21",
+    "content": "By April 21, the team planned to finish and deploy the website, connect GA4 and GTM, implement the one-time mobile-link email, and prepare the rebranding announcement for the blog channel.",
+    "tags": [
+      "website launch",
+      "ga4",
+      "gtm",
+      "rebranding"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "action",
+    "title": "Run eight sales meetings from April 22 through April 24",
+    "content": "Two team members will split eight scheduled sales meetings evenly. Each meeting should demonstrate inline AI, explain the team plan and relevant use cases, and offer 10,000 additional credits when the customer permits recording for possible content use.",
+    "tags": [
+      "sales meetings",
+      "team plan",
+      "product demo",
+      "recording incentive"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "decision",
+    "title": "Do not add credit rollover or standalone credit purchases",
+    "content": "The team decided not to add credit rollover. Standalone credit purchases and pay-after-the-fact billing were deferred because they did not fit the current tiered subscription model.",
+    "tags": [
+      "credit rollover",
+      "credit purchase",
+      "subscription tiers"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "decision",
+    "title": "Limit the next team-plan release to invitation acceptance",
+    "content": "The team decided to finish the flow in which an invited user can accept inside the app after the organization is created. Notifications should work while the app is open and persist so the invitation remains available when the app is reopened; broader onboarding automation was deferred.",
+    "tags": [
+      "team plan",
+      "invitation acceptance",
+      "organization onboarding",
+      "notifications"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "decision",
+    "title": "Proceed with the IITP model-hosting and agent project for KRW 350 million",
+    "content": "The team decided to proceed with the IITP project for KRW 350 million including VAT. The scope includes hosting Gemma and EXAONE 4.5, deploying the agent service, initially running on H100 hardware, porting to H200 later, and supporting model updates for one year.",
+    "tags": [
+      "iitp",
+      "model hosting",
+      "gemma",
+      "exaone",
+      "on-premises"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "decision",
+    "title": "Remove time-based proration from subscription upgrades",
+    "content": "For an upgrade, the customer will pay only the price difference between plans and receive the corresponding increase in plan credits. The existing billing-cycle end date remains unchanged, so payment and added credits are no longer scaled by the number of days remaining in the cycle.",
+    "tags": [
+      "subscription upgrade",
+      "proration",
+      "billing",
+      "credits"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "decision",
+    "title": "Simplify CRM to one-time transactional emails",
+    "content": "The team removed complex lifecycle sequences. A user should receive a single email at signup, and a mobile download-link request should trigger one immediate email; longer sequences can be reconsidered after the user guide exists.",
+    "tags": [
+      "crm",
+      "transactional email",
+      "resend",
+      "onboarding email"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "decision",
+    "title": "Start paid acquisition with KRW 1 million in Google Ads",
+    "content": "The initial paid advertising plan is to spend KRW 1 million on Google Ads, focusing on Excel-oriented professional audiences before increasing the budget based on observed performance.",
+    "tags": [
+      "google ads",
+      "paid acquisition",
+      "excel professionals",
+      "ad budget"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "issue",
+    "title": "IITP project structure could hide inline AI and reduce strategic value",
+    "content": "The IITP paperwork and security-review structure remained unresolved. The team was concerned that an anonymous SI-style delivery could prevent inline AI and the company name from benefiting from the security review and could weaken the opportunity to package the work as a reusable on-premises solution.",
+    "tags": [
+      "iitp",
+      "security review",
+      "si delivery",
+      "on-premises"
+    ],
+    "ageDays": 121
+  },
+  {
+    "type": "action",
+    "title": "Build SEO acquisition assets and an HWP-to-Markdown converter",
+    "content": "The team will create an automated blog publishing system, finish polishing the existing blog, and add a Hancom Hangul (HWP)-to-Markdown converter to the website as an acquisition tool.",
+    "tags": [
+      "seo",
+      "blog automation",
+      "hwp",
+      "markdown converter"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "action",
+    "title": "Chang-sik to stabilize HWP and Excel processes",
+    "content": "Chang-sik will consolidate Hancom Hangul (HWP) work into one process with a globally managed instance and investigate the Excel freezing behavior as part of system stabilization.",
+    "tags": [
+      "hwp",
+      "excel",
+      "system stability",
+      "chang-sik"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "action",
+    "title": "Evaluate HWP performance with an additional open-source model",
+    "content": "Chang-sik will integrate an additional open-source model for speed and cost efficiency. Sang-yeon will expand the HWP evaluation set and measure correct placement, preservation of unchanged content, writing quality, price, and speed.",
+    "tags": [
+      "hwp evaluation",
+      "open-source model",
+      "quality",
+      "cost efficiency"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "action",
+    "title": "Improve product education and website credibility",
+    "content": "The team will add references from brands currently using the product, write user documentation, and produce a guide video for users who do not know how to use the service.",
+    "tags": [
+      "user education",
+      "documentation",
+      "guide video",
+      "brand references"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "action",
+    "title": "Launch Google paid ads and direct influencer advertising",
+    "content": "The business plan called for starting Google paid advertising and directly approaching roughly three influencers for advertising rather than using an agency.",
+    "tags": [
+      "google ads",
+      "influencer advertising",
+      "paid acquisition"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "action",
+    "title": "Sang-yeon to fix incorrect placement in HWP edit test 14",
+    "content": "Sang-yeon will investigate and fix the read and edit problem in test case 14, where content is inserted into the wrong location in a complex HWP table.",
+    "tags": [
+      "hwp",
+      "edit test 14",
+      "content placement",
+      "sang-yeon"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "action",
+    "title": "Set up product analytics and analyze non-converting conversations",
+    "content": "The team will configure inline AI tracking and Mixpanel, define the metrics to observe, and review conversations from free users who did not convert and subscribers who churned.",
+    "tags": [
+      "mixpanel",
+      "product analytics",
+      "conversion",
+      "churn"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "decision",
+    "title": "Defer B2B enablement materials and lower-priority HWP features",
+    "content": "The team deferred the B2B usage estimator, admin-page entry changes, downloadable sales collateral, additional Markdown and text-file support, and advanced HWP formatting until the product, model, and cost structure were more stable.",
+    "tags": [
+      "b2b",
+      "deferred work",
+      "hwp features",
+      "product stability"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "decision",
+    "title": "Introduce a KRW 50,000 bug bounty for actionable reports",
+    "content": "The team decided to pay KRW 50,000 for a successful, reproducible bug report and add a dedicated bug-report form that can collect details and files, with an NDA included when needed.",
+    "tags": [
+      "bug bounty",
+      "bug reports",
+      "google form",
+      "nda"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "decision",
+    "title": "Prioritize B2C internally instead of enterprise",
+    "content": "The team decided to place its immediate internal focus on B2C because concentrating on enterprise would require additional concerns such as on-premises deployment and uncertain local-model performance.",
+    "tags": [
+      "b2c",
+      "enterprise",
+      "business focus",
+      "on-premises"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "update",
+    "title": "The June 30 MRR target was KRW 1.5 billion",
+    "content": "The team stated a target of reaching KRW 1.5 billion in monthly recurring revenue by June 30, which represented roughly 50-fold growth from the current level.",
+    "tags": [
+      "mrr",
+      "revenue target",
+      "june 30",
+      "growth"
+    ],
+    "ageDays": 115
+  },
+  {
+    "type": "action",
+    "title": "Build Python execution skills for five document formats",
+    "content": "The team will build a controlled Python execution environment and detailed skills for Word, HWP, Excel, PowerPoint, and PDF.",
+    "tags": [
+      "python",
+      "document formats",
+      "skills"
+    ],
+    "ageDays": 96
+  },
+  {
+    "type": "action",
+    "title": "Build the fast-processing and memory MVP in two weeks",
+    "content": "The team committed to a two-week MVP that lets users complete repeated office work quickly and re-run a previously created workflow more cheaply and efficiently.",
+    "tags": [
+      "mvp",
+      "memory",
+      "workflow reuse"
+    ],
+    "ageDays": 96
+  },
+  {
+    "type": "action",
+    "title": "Expose saved workflows through commands and previews",
+    "content": "The team will let users recall saved prompts or workflows with slash commands in the composer, show frequent skills as home-screen buttons, display scripts and workflows in a list with previews, and provide input fields for variable values.",
+    "tags": [
+      "slash commands",
+      "workflow ui",
+      "skills"
+    ],
+    "ageDays": 96
+  },
+  {
+    "type": "action",
+    "title": "Make workflow credit savings visible",
+    "content": "The product should clearly show credit usage and explain that saving a workflow reduces the cost and time of later executions.",
+    "tags": [
+      "credits",
+      "cost transparency",
+      "workflow reuse"
+    ],
+    "ageDays": 96
+  },
+  {
+    "type": "action",
+    "title": "Provide built-in document converters",
+    "content": "The team will provide built-in converters for common document-format transformations instead of requiring users to install external libraries themselves.",
+    "tags": [
+      "document conversion",
+      "built-in converters",
+      "file formats"
+    ],
+    "ageDays": 96
+  },
+  {
+    "type": "decision",
+    "title": "Position the product as AI for fast office-work execution",
+    "content": "The team decided to position the product as an automation AI that quickly handles office and document work across a user's computer, rather than limiting the product to document writing alone.",
+    "tags": [
+      "office automation",
+      "product positioning",
+      "document work"
+    ],
+    "ageDays": 96
+  },
+  {
+    "type": "decision",
+    "title": "Prioritize fast document execution plus memory",
+    "content": "The team identified two user needs: deeply refining a valuable document through interaction and quickly completing repetitive short documents, transformations, or office tasks. The current priority is the fast, programmatic execution path combined with memory.",
+    "tags": [
+      "workflow automation",
+      "memory",
+      "document generation"
+    ],
+    "ageDays": 96
+  },
+  {
+    "type": "decision",
+    "title": "Reuse saved scripts by separating code from inputs",
+    "content": "Repeated workflows should save a generated Python script separately from its variable inputs, so later runs can extract new values and execute the existing script instead of regenerating the entire implementation.",
+    "tags": [
+      "script reuse",
+      "workflow automation",
+      "variables"
+    ],
+    "ageDays": 96
+  },
+  {
+    "type": "decision",
+    "title": "Separate user preferences from dynamic workflow memory",
+    "content": "The memory architecture should keep stable user preferences such as fonts, tone, bullet style, and document structure separate from dynamic memories such as reusable scripts and project- or document-specific context.",
+    "tags": [
+      "user preferences",
+      "dynamic memory",
+      "architecture"
+    ],
+    "ageDays": 96
+  },
+  {
+    "type": "feedback",
+    "title": "Users do not know how to use the current service",
+    "content": "Users reported that they did not know how to use the service and could not find adequate guidance or training.",
+    "tags": [
+      "onboarding",
+      "user guidance",
+      "workflow ux"
+    ],
+    "ageDays": 96
+  },
+  {
+    "type": "action",
+    "title": "Complete DOCX editing by the third week of June",
+    "content": "Sangyeon is responsible for entering Word development after the HWP refactor and completing DOCX editing functionality by the third week of June.",
+    "tags": [
+      "docx",
+      "word editing",
+      "development deadline",
+      "sangyeon"
+    ],
+    "ageDays": 80
+  },
+  {
+    "type": "action",
+    "title": "Implement daily credits for free users",
+    "content": "Changshik will implement a daily-credit system so free users can return and use the product within a limited daily allowance.",
+    "tags": [
+      "daily credits",
+      "free users",
+      "retention"
+    ],
+    "ageDays": 80
+  },
+  {
+    "type": "decision",
+    "title": "Build a standards-compatible Create Skill system",
+    "content": "The product should include built-in skills and a Create Skill capability for user-defined automation. The skill structure should follow the international agent-skill standard discussed in the meeting, remain compatible with Claude-style skills where possible, and distinguish public skills from private internal capabilities.",
+    "tags": [
+      "skills",
+      "create skill",
+      "agent standard",
+      "claude compatibility",
+      "automation"
+    ],
+    "ageDays": 80
+  },
+  {
+    "type": "decision",
+    "title": "Focus code execution on office-work operations outside existing document editing",
+    "content": "The team decided to preserve its high-quality COM-based document editing and use the new code-execution environment primarily for PDF and image generation, local-file operations, text extraction, and other steps that occur before or around editing rather than duplicating the existing editor.",
+    "tags": [
+      "office automation",
+      "code execution",
+      "pdf",
+      "local files",
+      "document editing"
+    ],
+    "ageDays": 80
+  },
+  {
+    "type": "decision",
+    "title": "Prioritize distribution and Word before expanding to PPT",
+    "content": "The team chose distribution and format expansion as the main focus, with Word development first. PPT work should not expand the scope prematurely, and file-format conversion was excluded from the immediate iteration discussed at the start of the meeting.",
+    "tags": [
+      "distribution",
+      "word",
+      "ppt",
+      "file formats"
+    ],
+    "ageDays": 80
+  },
+  {
+    "type": "decision",
+    "title": "Run arbitrary code in disposable server-side sandboxes",
+    "content": "The team chose a VM or container architecture in which generated code runs on the server rather than directly on the user's computer. A desktop session exposes the local working folder through a mounted connection, dependencies can be preinstalled in the sandbox, and server-side working data should be deleted after the task to reduce security and privacy risk.",
+    "tags": [
+      "code execution",
+      "server sandbox",
+      "vm",
+      "container",
+      "security"
+    ],
+    "ageDays": 80
+  },
+  {
+    "type": "decision",
+    "title": "Target 100,000 active users by September 30",
+    "content": "The team set September 30 as the deadline for reaching 100,000 active users and chose user growth as the single company-level objective. The meeting summary labels the metric MAU, while an appended planning section labels the same 100,000 target WAU; the source does not resolve the discrepancy.",
+    "tags": [
+      "active users",
+      "mau",
+      "wau",
+      "q3 goal"
+    ],
+    "ageDays": 80
+  },
+  {
+    "type": "decision",
+    "title": "Unify prompt memory and custom automation under Skills",
+    "content": "The team decided to present prompt memory and custom automation as one user-facing Skills concept. Skills should be invokable with slash commands, and the UI can offer prompts such as 'Would you like to automate this task?' without exposing implementation details.",
+    "tags": [
+      "skills",
+      "prompt memory",
+      "slash commands",
+      "automation"
+    ],
+    "ageDays": 80
+  },
+  {
+    "type": "issue",
+    "title": "User-uploaded files must be handled carefully in internal testing",
+    "content": "The team identified a privacy risk in describing or performing tests with files uploaded by users. Even when files were voluntarily submitted, internal testing and external explanations must avoid implying unrestricted use of personal customer data.",
+    "tags": [
+      "customer files",
+      "privacy",
+      "internal testing",
+      "data handling"
+    ],
+    "ageDays": 80
+  },
+  {
+    "type": "action",
+    "title": "Finish Skill, Word, Stripe, and QA in sequence",
+    "content": "The near-term plan is to finish Skill details during the current week, complete Word as soon as possible, add Stripe the following week, and use the next week for QA before release.",
+    "tags": [
+      "skill",
+      "Word",
+      "Stripe",
+      "qa"
+    ],
+    "ageDays": 66
+  },
+  {
+    "type": "action",
+    "title": "Run a Cursor Cloud Agent and Linear automation PoC",
+    "content": "The team will first test a native Cursor Cloud Agent and Linear workflow in which custom Linear statuses trigger planning and implementation. If native integration cannot preserve one continuous thread, the team will consider an SDK-based approach with managed session IDs.",
+    "tags": [
+      "Cursor",
+      "Linear",
+      "automation"
+    ],
+    "ageDays": 66
+  },
+  {
+    "type": "action",
+    "title": "Validate the professional-firm ICP through direct outreach",
+    "content": "The team will interview and demo to executives at small professional firms through LinkedIn and Korean professional networks, and will ask 김동신 for introductions to relevant target customers.",
+    "tags": [
+      "customer interviews",
+      "LinkedIn",
+      "go-to-market"
+    ],
+    "ageDays": 66
+  },
+  {
+    "type": "decision",
+    "title": "Launch Workspace on one high-memory server first",
+    "content": "For launch speed, Workspace will initially run on one high-memory server. After usage grows, the infrastructure should move to multiple machines with Redis tracking which machine owns each user's session.",
+    "tags": [
+      "Workspace",
+      "infrastructure",
+      "Redis"
+    ],
+    "ageDays": 66
+  },
+  {
+    "type": "decision",
+    "title": "Position inline AI as an AI-native work system",
+    "content": "The team chose an AI-native positioning: all relevant context should be readable by AI, and the AI should perform real professional work to output quality rather than merely automate a narrow workflow or generate a one-way draft.",
+    "tags": [
+      "ai-native",
+      "product positioning",
+      "professional work"
+    ],
+    "ageDays": 66
+  },
+  {
+    "type": "decision",
+    "title": "Start with individual professionals and expand to teams",
+    "content": "The initial ICP is individual professionals and 1-to-10-person professional firms such as accounting, legal, and sales teams. The product should first make one professional more capable, then expand naturally into shared team memory and alignment, with the United States as the primary market.",
+    "tags": [
+      "professional services",
+      "smb",
+      "us market"
+    ],
+    "ageDays": 66
+  },
+  {
+    "type": "decision",
+    "title": "Target July 3 for the Word, Workspace, Skill, and Stripe release",
+    "content": "The release target was set for July 3 with Word, Workspace, inline Skill, and Stripe included. PowerPoint remained uncertain within the schedule, and website and GTM work would begin after release.",
+    "tags": [
+      "release plan",
+      "Word",
+      "Workspace",
+      "Stripe"
+    ],
+    "ageDays": 66
+  },
+  {
+    "type": "issue",
+    "title": "US go-to-market execution remains unclear",
+    "content": "The team identified unclear US go-to-market execution, especially the target, message, and channels, as its largest business risk.",
+    "tags": [
+      "go-to-market",
+      "us market",
+      "distribution"
+    ],
+    "ageDays": 66
+  },
+  {
+    "type": "issue",
+    "title": "Workspace production stability is uncertain",
+    "content": "The team raised concerns about concurrent Workspace users, server capacity, error response, and session routing in production.",
+    "tags": [
+      "Workspace",
+      "production stability",
+      "session routing"
+    ],
+    "ageDays": 66
+  },
+  {
+    "type": "action",
+    "title": "Split the first implementation between UX and technical research",
+    "content": "Sangyeon will design the UX and stabilize Word evaluation. Changshik will research cloud versus local execution, agent and database placement, email and calendar CRUD and synchronization, meeting transcription, and memory architecture.",
+    "tags": [
+      "ux design",
+      "technical research",
+      "work allocation",
+      "word"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "action",
+    "title": "Target July 31 for the client-workflow product milestone",
+    "content": "The project plan targets completion by July 31, with the first week devoted to product planning, UX design, Word stabilization, and technical research.",
+    "tags": [
+      "july 31",
+      "product milestone",
+      "implementation plan"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "decision",
+    "title": "Implement the meeting-to-project workflow first",
+    "content": "The first representative workflow should capture an offline meeting, summarize it, find an existing related project or propose creating one, create follow-up todos, draft a follow-up email, and add calendar work. A later incoming email should find the project, update existing work, and start the next cycle.",
+    "tags": [
+      "meeting workflow",
+      "project setup",
+      "action items",
+      "follow-up email",
+      "calendar"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "decision",
+    "title": "Integrate Gmail and Outlook instead of operating an email server",
+    "content": "The product will read and synchronize inbox data through Gmail and Outlook integrations rather than operate its own email server.",
+    "tags": [
+      "gmail",
+      "outlook",
+      "email integration",
+      "inbox"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "decision",
+    "title": "Target professionals who manage client-centered work",
+    "content": "The product concept is an end-to-end AI workflow system for professionals who manage multiple clients or cases, hold frequent meetings, exchange emails and documents, and earn money from document-based outputs. Candidate users include lawyers, patent attorneys, salespeople, and consultants.",
+    "tags": [
+      "client workflow",
+      "professional services",
+      "case management",
+      "hermes agent"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "decision",
+    "title": "Trigger workflows from incoming email and calendar events",
+    "content": "The product workflow should start automatically from external events such as incoming email and calendar activity, instead of requiring every workflow to begin with a manual prompt.",
+    "tags": [
+      "workflow triggers",
+      "email events",
+      "calendar events",
+      "automation"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "feedback",
+    "title": "A generic agent without user-specific context will not be differentiated",
+    "content": "The team expects users to reject an agent that feels like generic GPT output. The product needs to learn each professional's patterns, frameworks, project history, and intent so its actions and drafts feel grounded in the user's actual way of working.",
+    "tags": [
+      "personalization",
+      "user context",
+      "workflow patterns",
+      "differentiation"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "issue",
+    "title": "Cloud versus local architecture remained unresolved",
+    "content": "The team did not finalize whether the product should be local or cloud-based. It agreed that the agent and its database should live in the same environment, noted that local storage creates future migration and multi-device problems, and determined that UX design can continue while the technical architecture is researched.",
+    "tags": [
+      "cloud architecture",
+      "local architecture",
+      "agent database",
+      "migration"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "proposal",
+    "title": "Maintain chronological short memory plus project context",
+    "content": "The proposed agent memory design keeps a chronological short memory of actions such as meetings and sent emails while maintaining shared project context. Recent events could be capped at roughly 50-100 entries, with older context fetched on demand and skills and tools loaded lazily; the exact limit was not finalized.",
+    "tags": [
+      "short memory",
+      "project context",
+      "lazy loading",
+      "context limit"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "proposal",
+    "title": "Transcribe completed meeting recordings with Whisper and diarization",
+    "content": "The proposed meeting-note pipeline uses Whisper with speaker diarization. Processing the recording after the meeting was considered more useful than showing a live transcript, although the implementation approach still required technical research.",
+    "tags": [
+      "meeting transcription",
+      "whisper",
+      "speaker diarization",
+      "recording"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "proposal",
+    "title": "Use planning, worker, and editing agents with human-in-the-loop control",
+    "content": "A three-layer architecture was proposed: a planning agent determines the next work, worker agents perform actions such as email, project, issue, calendar, web, and document generation, and an editing agent handles document edits. Preview-and-action interactions and human approval would preserve control instead of making the system fully autonomous.",
+    "tags": [
+      "multi-agent",
+      "planning agent",
+      "worker agent",
+      "editing agent",
+      "human approval"
+    ],
+    "ageDays": 59
+  },
+  {
+    "type": "action",
+    "title": "Recruit 20 workflow interview participants from inline AI users",
+    "content": "The team will request interviews from inline AI's 28,000 members and recruit 20 working professionals who rely heavily on email, manage clients, take meeting notes, and perform follow-up work; students are excluded.",
+    "tags": [
+      "customer interviews",
+      "workflow research",
+      "inline AI"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "action",
+    "title": "Research markets before selecting strategy and product",
+    "content": "The team will research candidate markets using Market Attractiveness, Sector Landscape, Workflow Landscape, and Competitive Landscape, then select a market, define the ICP and competitive positioning, and only then plan the product.",
+    "tags": [
+      "market research",
+      "icp",
+      "competitive analysis"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "action",
+    "title": "Stabilize document conversion and validate skills on real files",
+    "content": "The team will investigate a more stable LibreOffice conversion path and validate document-generation skills against its existing test files, aiming for a diverse set of roughly 50 to 100 files rather than judging only a few examples.",
+    "tags": [
+      "LibreOffice",
+      "document conversion",
+      "skill evaluation"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "decision",
+    "title": "Choose a domain before planning the next product",
+    "content": "The team concluded that the vague AI OS idea space was too difficult to express and pursue without strong conviction, and decided to select a specific domain and market before defining product strategy and entering product planning.",
+    "tags": [
+      "vertical market",
+      "product strategy",
+      "domain selection"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "feedback",
+    "title": "The support flow made technical problems hard to communicate",
+    "content": "A customer had already tried email and KakaoTalk before calling, but the team still struggled to identify the exact failure. The customer remained polite but was frustrated enough to call directly, exposing a weakness in issue intake and communication.",
+    "tags": [
+      "customer support",
+      "issue intake",
+      "communication"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "issue",
+    "title": "PDF-to-Word conversion quality remains limited",
+    "content": "The team acknowledged that PDF-to-Word conversion quality remains limited and still needs validation across diverse source files.",
+    "tags": [
+      "pdf",
+      "Word",
+      "conversion quality"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "issue",
+    "title": "PowerPoint files shrink during processing",
+    "content": "PowerPoint files were repeatedly shrinking during processing, and the team had not confirmed a solution.",
+    "tags": [
+      "PowerPoint",
+      "file size",
+      "conversion stability"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "pattern",
+    "title": "The company lacks a stable target market and decision criteria",
+    "content": "The team diagnosed the core business problem as having no clear target market, insufficient market and customer understanding, no stable strategy, and decisions that repeatedly change because they are based on internal arguments rather than external evidence and explicit criteria.",
+    "tags": [
+      "decision making",
+      "target market",
+      "strategy"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "update",
+    "title": "A long-document failure led to an immediate refund",
+    "content": "A customer reported that processing a document of several hundred pages stalled and consumed the available credits. The team understood the failure during a phone call and immediately refunded the June 19 payment.",
+    "tags": [
+      "long documents",
+      "credits",
+      "refund"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "update",
+    "title": "Legal and sales are the initial market candidates",
+    "content": "The initial candidate markets listed for domain research were legal services and sales.",
+    "tags": [
+      "legal",
+      "sales",
+      "market research"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "update",
+    "title": "Monthly service usage increased from 3,900 to 4,400 users",
+    "content": "The team reported approximately 3,900 users two months earlier and 4,400 users in the previous month.",
+    "tags": [
+      "user growth",
+      "monthly users",
+      "usage"
+    ],
+    "ageDays": 52
+  },
+  {
+    "type": "action",
+    "title": "Begin overseas direct investment reporting",
+    "content": "이상연 will contact 신한 to begin the overseas direct investment reporting process.",
+    "tags": [
+      "odi",
+      "overseas investment",
+      "Shinhan"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "action",
+    "title": "Close the Barbarossa format-conversion loop by July 20",
+    "content": "The team will share the Barbarossa format-conversion results by July 20 and then mark the work complete instead of allowing the evaluation loop to continue indefinitely.",
+    "tags": [
+      "Barbarossa",
+      "format conversion",
+      "deadline"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "action",
+    "title": "Complete all code-based document-generation skills by July 22",
+    "content": "The team will finish the PDF, Excel, DOCX, PPTX, and HWPX creator skills by July 22, adapting Anthropic's skill instructions and tools to the inline AI environment and completing the HWPX creator beyond its draft state.",
+    "tags": [
+      "document generation",
+      "hwpx",
+      "docx",
+      "pptx"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "action",
+    "title": "Finish file reading, Stripe, and Workspace infrastructure this week",
+    "content": "The team will add support for reading all file types during the current week and finish Stripe integration and Workspace infrastructure by July 23.",
+    "tags": [
+      "file reading",
+      "Stripe",
+      "Workspace"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "action",
+    "title": "Implement multi-agent editing UX and Search Chat",
+    "content": "Starting July 23, the team will implement format-specific edit windows, multiple windows and agents, session reload behavior, document-window routing and notifications, and Search Chat, targeting completion of this UX work by July 24.",
+    "tags": [
+      "multi-agent",
+      "editing ux",
+      "Search Chat"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "action",
+    "title": "Move editing instructions from skills into tool descriptions",
+    "content": "The team will remove proprietary editing tags from inline skills, migrate the instructions into tool descriptions, and verify whether legacy edit-tool deserialization and compaction logic can be disabled without breaking old sessions.",
+    "tags": [
+      "tool descriptions",
+      "skills",
+      "legacy sessions"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "action",
+    "title": "Seek remediation for the rejected Mercury application",
+    "content": "The team will continue asking Mercury which supplementary documents could improve the rejected account application; Mercury's policy does not disclose the rejection reason.",
+    "tags": [
+      "Mercury",
+      "bank account",
+      "application rejection"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "decision",
+    "title": "Build a capture-to-document loop around meetings",
+    "content": "The product concept is Turn your meetings into complete documents: a meeting should be captured, matched to an appropriate document format, and turned into a completed deliverable. Meeting notes and the post-meeting format suggestion are required parts of the Version 1 scope, not optional add-ons.",
+    "tags": [
+      "meeting notes",
+      "document automation",
+      "product concept"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "decision",
+    "title": "Finish the document foundation before entering US GTM",
+    "content": "The confirmed direction is to finish Word, code-based document generation, Stripe, reusable script automation through Skill and simple UX, and meeting notes before beginning US go-to-market work.",
+    "tags": [
+      "us market",
+      "Word",
+      "Stripe",
+      "meeting notes"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "decision",
+    "title": "Run Barbarossa QA on July 27 and target release on August 7",
+    "content": "The team set July 27 for the Barbarossa QA review and August 7 as the final release target, with meeting-note and document-automation development starting after the current foundation work.",
+    "tags": [
+      "Barbarossa",
+      "qa",
+      "release plan"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "proposal",
+    "title": "Add reusable design themes to generated documents",
+    "content": "The team proposed a design.md layer that describes fonts, colors, layouts, and other rules, plus predefined code-importable themes that apply defaults to headings and paragraphs while allowing property overrides. The style-property foundation should be built first, and the theme layer should be decided after Terra and Luna tests.",
+    "tags": [
+      "document themes",
+      "design system",
+      "Terra",
+      "Luna"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "proposal",
+    "title": "Evaluate meeting-note transcription with cloud-stored audio",
+    "content": "The proposed meeting-note architecture stores recordings and transcripts in the cloud, runs evaluation on the backend, and compares ElevenLabs with OpenAI Whisper using a small evaluation set with both Korean and English recordings. Speaker diarization and prompt limitations still need verification.",
+    "tags": [
+      "meeting notes",
+      "transcription",
+      "Whisper",
+      "ElevenLabs"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "update",
+    "title": "Raw XML outperformed CVD in document-editing evaluation",
+    "content": "The July 18 evaluation found equal cost between raw XML and CVD editing, with XML becoming cheaper on larger documents. Value reflection favored XML at 76.7% versus 70.3% for HWP and 95.7% versus 91.3% for Word, but XML could silently delete tables or cells and had about 2.5 times the Bash-command failure rate, so safeguards are still required.",
+    "tags": [
+      "xml",
+      "cvd",
+      "document editing",
+      "evaluation"
+    ],
+    "ageDays": 31
+  },
+  {
+    "type": "action",
+    "title": "Interview 20 US lawyers and 10 Korean lawyers before finalizing direction",
+    "content": "The team will interview 20 lawyers in the United States and 10 lawyers in Korea, and will avoid treating the legal direction as final until all 30 interviews supply enough evidence for a decision.",
+    "tags": [
+      "lawyer interviews",
+      "market validation",
+      "legal ai"
+    ],
+    "ageDays": 27
+  },
+  {
+    "type": "action",
+    "title": "Ship the current Word, document-generation, Stripe, and UX build",
+    "content": "The team will ship the current build with Word, document generation, Stripe integration, and the planned UX while the lawyer interviews and legal-domain validation proceed.",
+    "tags": [
+      "Word",
+      "Stripe",
+      "document generation",
+      "release"
+    ],
+    "ageDays": 27
+  },
+  {
+    "type": "decision",
+    "title": "Keep the legal pivot inside inline AI instead of forking a new service",
+    "content": "The current decision is to pursue the legal-domain direction within the existing inline AI product rather than split off a separate service, avoiding duplicate infrastructure, back-office, administration, team setup, and Stripe operations.",
+    "tags": [
+      "inline AI",
+      "legal ai",
+      "product architecture"
+    ],
+    "ageDays": 27
+  },
+  {
+    "type": "decision",
+    "title": "Prioritize the US and stop prioritizing Korea-specific features",
+    "content": "The team aligned on the United States as the first-priority market and decided that new product work should no longer prioritize HWP or other Korea- and Korean-language-specific capabilities.",
+    "tags": [
+      "us market",
+      "hwp",
+      "localization"
+    ],
+    "ageDays": 27
+  },
+  {
+    "type": "pattern",
+    "title": "Product direction keeps changing without new evidence",
+    "content": "The team traced repeated uncertainty to a mismatch between the stated US goal and continued work on Korea-specific features, plus a pattern of making verbal decisions without supplying the interviews or data needed to keep those decisions stable.",
+    "tags": [
+      "decision making",
+      "us market",
+      "product strategy"
+    ],
+    "ageDays": 27
+  },
+  {
+    "type": "proposal",
+    "title": "Test an AI OS for one-to-ten-person law firms",
+    "content": "The provisional product direction is a legal-domain AI OS for one-to-ten-person law firms in Korea and the United States, covering legal search, document automation, meeting notes, email, and large PDFs. The direction remains subject to validation rather than being a permanent market commitment.",
+    "tags": [
+      "legal ai",
+      "law firms",
+      "product validation"
+    ],
+    "ageDays": 27
+  },
+  {
+    "type": "update",
+    "title": "Investment due diligence completed without issues",
+    "content": "The team received confirmation that the investment due-diligence process was completed without problems after the requested materials were prepared.",
+    "tags": [
+      "due diligence",
+      "investment",
+      "compliance"
+    ],
+    "ageDays": 27
+  },
+  {
+    "type": "action",
+    "title": "Deploy the current product this week before choosing the next direction",
+    "content": "The team plans to deploy what has already been built during the current week. After deployment, it will operate the product, begin looking for acquisition opportunities, and select and deeply investigate the next product direction.",
+    "tags": [
+      "product deployment",
+      "operations",
+      "acquisition",
+      "product discovery"
+    ],
+    "ageDays": 24
+  },
+  {
+    "type": "decision",
+    "title": "A pivot away from inline AI means narrowing the customer and restarting",
+    "content": "The team aligned that pivoting away from inline AI means selecting one target customer and being willing to start from zero, including the service form, customer, product narrative, and implementation rather than treating the pivot as a small feature change.",
+    "tags": [
+      "pivot",
+      "inline ai",
+      "target customer",
+      "product restart"
+    ],
+    "ageDays": 24
+  },
+  {
+    "type": "feedback",
+    "title": "Choose a large market and understand one differentiated segment deeply",
+    "content": "Sunwoo Seunghwan advised that the company must participate in a large market, deliver a differentiated user experience within a specific segment, and be able to explain the target customer and market in depth; a strong product in a small market may still fail to grow.",
+    "tags": [
+      "market selection",
+      "customer segment",
+      "differentiation",
+      "market research"
+    ],
+    "ageDays": 24
+  },
+  {
+    "type": "issue",
+    "title": "U.S. legal and knowledge-worker directions require deeper validation",
+    "content": "Open questions include whether meaningful U.S. legal-market share remains after broad Harvey adoption by AmLaw 100 firms, whether smaller firms have adequate willingness to pay, whether a Korean team can execute U.S. legal go-to-market efficiently, and whether workflow redesign for high-context-switching knowledge workers is a real pain rather than a tarpit already addressed with coding agents.",
+    "tags": [
+      "u.s. legal",
+      "market validation",
+      "go-to-market",
+      "knowledge workers",
+      "workflow pain"
+    ],
+    "ageDays": 24
+  },
+  {
+    "type": "issue",
+    "title": "inline AI lacked a clearly defined end goal",
+    "content": "The stated reason for pivoting before another release was that the product had no clearly defined endpoint or target outcome, making the direction ambiguous.",
+    "tags": [
+      "product direction",
+      "target outcome",
+      "pivot rationale"
+    ],
+    "ageDays": 24
+  },
+  {
+    "type": "proposal",
+    "title": "Four product directions remained under consideration after deployment",
+    "content": "The unresolved directions were to investigate the U.S. legal market deeply, redesign knowledge-worker workflows around AI, continue with a document-generation API, or continue building an agent for Korean public-sector customers. No final direction was selected in this meeting.",
+    "tags": [
+      "product direction",
+      "u.s. legal",
+      "workflow redesign",
+      "document api",
+      "public sector"
+    ],
+    "ageDays": 24
+  },
+  {
+    "type": "action",
+    "title": "Attempt real sales and user discovery during the remaining SF stay",
+    "content": "During the roughly two remaining weeks in San Francisco, the team will pitch and try to sell the product to real users, conduct coffee chats with roles such as accountants and product managers, and combine those sales loops with case-study research.",
+    "tags": [
+      "san francisco",
+      "sales",
+      "user discovery",
+      "coffee chats"
+    ],
+    "ageDays": 4
+  },
+  {
+    "type": "action",
+    "title": "Build a proactive to-do app demo before the Monday pitch",
+    "content": "The team will create a proactive to-do app demo for the Monday pitch. The concept is to infer, create, and schedule tasks from context instead of requiring the user to enter every task manually.",
+    "tags": [
+      "proactive todo",
+      "demo",
+      "monday pitch",
+      "task scheduling"
+    ],
+    "ageDays": 4
+  },
+  {
+    "type": "action",
+    "title": "Port inline AI to macOS and verify Apple Developer signing",
+    "content": "The team will port the existing Windows Electron wrapper for inline AI to macOS, begin from the six core files in the AI-Agent folder, and verify whether the Apple Developer signing certificate is still valid or must be renewed.",
+    "tags": [
+      "inline ai",
+      "macos",
+      "electron",
+      "apple developer"
+    ],
+    "ageDays": 4
+  },
+  {
+    "type": "action",
+    "title": "Prioritize SF practitioner networking events over hackathons",
+    "content": "The team will review the San Francisco event list together and prioritize practitioner networking events such as founder breakfasts, builder breakfasts, and GTM gatherings over spending most of the remaining stay at hackathons.",
+    "tags": [
+      "san francisco",
+      "networking events",
+      "gtm",
+      "hackathons"
+    ],
+    "ageDays": 4
+  },
+  {
+    "type": "action",
+    "title": "Review the Korea-versus-United-States direction every week",
+    "content": "The team will hold a recurring weekly discussion about whether the company should operate from Korea or the United States until the decision and its rationale are aligned.",
+    "tags": [
+      "korea",
+      "united states",
+      "weekly review",
+      "business direction"
+    ],
+    "ageDays": 4
+  },
+  {
+    "type": "decision",
+    "title": "Use the SF stay to learn target selection through real market experience",
+    "content": "The purpose of the remaining San Francisco stay was defined as learning a repeatable framework for choosing a target user and problem, then testing that framework through interviews, sales attempts, and case studies rather than relying on abstract discussion.",
+    "tags": [
+      "san francisco",
+      "target selection",
+      "market validation",
+      "user interviews"
+    ],
+    "ageDays": 4
+  },
+  {
+    "type": "feedback",
+    "title": "inline AI was assessed as a vulnerable frontier-model wrapper",
+    "content": "The team assessed the current inline AI structure as closer to a search or distribution layer over frontier models, leaving it exposed when Claude, OpenAI, or another frontier lab expands into the same application layer. They believed a defensible AI application would need to own a specific domain's workflow and ecosystem.",
+    "tags": [
+      "inline ai",
+      "frontier models",
+      "defensibility",
+      "domain workflow"
+    ],
+    "ageDays": 4
+  },
+  {
+    "type": "issue",
+    "title": "The Korea-versus-United-States business location remained unresolved",
+    "content": "The team did not decide whether to build the business in Korea or the United States. They agreed that either choice required a clear, memorable rationale grounded in experience because choosing only by market size or familiarity would cause the decision to be reopened later.",
+    "tags": [
+      "korea",
+      "united states",
+      "business location",
+      "unresolved decision"
+    ],
+    "ageDays": 4
+  },
+  {
+    "type": "proposal",
+    "title": "Explore deep enterprise AI adoption support as a Korea-focused direction",
+    "content": "One proposed direction was to help enterprises adopt AI by deeply understanding a company's domain workflow and removing deployment barriers without becoming a conventional SI vendor. Pharmaceutical and biotech workflows were discussed as possible examples, but the direction was not approved.",
+    "tags": [
+      "enterprise ai",
+      "korea",
+      "workflow adoption",
+      "pharmaceutical"
+    ],
+    "ageDays": 4
+  },
+  {
+    "type": "proposal",
+    "title": "Explore technically difficult products outside frontier-lab application territory",
+    "content": "Another unapproved direction was to use AI to build software that remains technically difficult and is less exposed to frontier-lab competition, with indie games, an operating system for agents, and a browser discussed as examples.",
+    "tags": [
+      "technical products",
+      "frontier labs",
+      "indie games",
+      "agent os"
+    ],
+    "ageDays": 4
+  }
+]

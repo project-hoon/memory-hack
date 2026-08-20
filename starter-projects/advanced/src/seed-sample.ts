@@ -39,8 +39,23 @@ const INDEX = "agent-memory";
 
 const daysAgo = (n: number) => new Date(Date.now() - n * 86_400_000).toISOString();
 
+// The starter's live `remember` tool writes these four core types. Historical
+// decision logs can also preserve their source semantics as issue/action/
+// proposal/update records, so recall can distinguish an adopted decision from
+// an open risk or unfinished commitment.
+const IMPORT_MEMORY_TYPES = [
+  "decision",
+  "pattern",
+  "context",
+  "feedback",
+  "issue",
+  "action",
+  "proposal",
+  "update",
+] as const;
+
 type Mem = {
-  type: "decision" | "pattern" | "context" | "feedback";
+  type: (typeof IMPORT_MEMORY_TYPES)[number];
   title: string;
   content: string;
   tags: string[];
@@ -62,7 +77,7 @@ async function main() {
   const memories = JSON.parse(await readFile(file, "utf8")) as Mem[];
   const bad = memories.filter(
     (m) => !m.title || !m.content || typeof m.ageDays !== "number" ||
-      !["decision", "pattern", "context", "feedback"].includes(m.type)
+      !IMPORT_MEMORY_TYPES.includes(m.type)
   );
   if (bad.length > 0) {
     console.error(`${bad.length} entries are missing type/title/content/ageDays - first bad title: ${bad[0]?.title ?? "(none)"}`);

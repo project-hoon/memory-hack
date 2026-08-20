@@ -90,38 +90,52 @@ export const remember = createTool({
 });
 
 // ---------------------------------------------------------------------------
-// recall - hybrid retrieval, ported directly from lib/memory.sh in the
-// agent-memory repo:
-//   FORK   → parallel BM25 (title/content/tags) + semantic branches
-//   FUSE   → Reciprocal Rank Fusion (k=60 default)
-//   DECAY  → recency weighting on created_at
+// Recall variants used by the three-way demo:
+//   1. no-memory agent: no tool at all
+//   2. long-term agent: FORK → FUSE (relevance, no time weighting)
+//   3. episodic agent: FORK → FUSE → DECAY (relevance + recency)
 // ---------------------------------------------------------------------------
-export const recall = createTool({
-  id: "recall",
-  description:
-    "Recall memories from previous sessions using hybrid search (exact " +
-    "keyword + semantic similarity, recency-weighted). Use at the start of " +
-    "a task to check for prior decisions, patterns, or blockers.",
-  inputSchema: z.object({
-    query: z.string().describe("What to recall, e.g. 'embedding model decisions'"),
-    limit: z.number().min(1).max(20).default(5),
-  }),
-  outputSchema: z.object({
-    memories: z.array(
-      z.object({
-        memory_id: z.string(),
-        type: z.string(),
-        display: z.string(),
-        agent: z.string(),
-        created_at: z.string(),
-        score: z.number(),
-      })
-    ),
-  }),
-  execute: async (input) => {
+const recallInputSchema = z.object({
+  query: z.string().describe("What to recall, e.g. 'embedding model decisions'"),
+  limit: z.number().min(1).max(20).default(5),
+});
+
+const recallOutputSchema = z.object({
+  memories: z.array(
+    z.object({
+      memory_id: z.string(),
+      type: z.string(),
+      title: z.string(),
+      content_excerpt: z.string(),
+      tags: z.array(z.string()),
+      agent: z.string(),
+      created_at: z.string(),
+      score: z.number(),
+    })
+  ),
+});
+
+function createRecallTool({
+  id,
+  description,
+  timeAware,
+}: {
+  id: string;
+  description: string;
+  timeAware: boolean;
+}) {
+  return createTool({
+    id,
+    description,
+    inputSchema: recallInputSchema,
+    outputSchema: recallOutputSchema,
+    execute: async (input) => {
     const q = esqlEscape(input.query);
     const scopeFilter =
       `(access_scope == "shared" OR access_scope == "${AGENT_ID}-only" OR agent == "${AGENT_ID}")`;
+    const scoring = timeAware
+      ? `| EVAL final_score = _score * DECAY(created_at, NOW(), ${DECAY_WINDOW_DAYS * 24} hours)`
+      : "| EVAL final_score = _score";
 
     const query = `
 FROM ${MEMORY_INDEX} METADATA _id, _score, _index
@@ -135,29 +149,55 @@ FROM ${MEMORY_INDEX} METADATA _id, _score, _index
     | SORT _score DESC | LIMIT 50
 )
 ${fuseClause()}
-| EVAL final_score = _score * DECAY(created_at, NOW(), ${DECAY_WINDOW_DAYS * 24} hours)
-| EVAL display = COALESCE(title, SUBSTRING(content, 1, 80))
+${scoring}
 | SORT final_score DESC | LIMIT ${input.limit}
-| KEEP memory_id, type, display, agent, created_at, final_score
+| KEEP memory_id, type, title, content, tags, agent, created_at, final_score
 `.trim();
 
-    // If DECAY throws a type error on your deployment, swap that EVAL for:
-    // | EVAL final_score = _score / (1 + DATE_DIFF("day", created_at, NOW()) / ${DECAY_WINDOW_DAYS}.0)
+      // If DECAY throws a type error on your deployment, swap that EVAL for:
+      // | EVAL final_score = _score / (1 + DATE_DIFF("day", created_at, NOW()) / ${DECAY_WINDOW_DAYS}.0)
 
-    const result = await es.esql.query({ query, format: "json" });
+      const result = await es.esql.query({ query, format: "json" });
 
-    const cols = result.columns.map((c: { name: string }) => c.name);
-    const idx = (name: string) => cols.indexOf(name);
+      const cols = result.columns.map((c: { name: string }) => c.name);
+      const idx = (name: string) => cols.indexOf(name);
 
-    const memories = (result.values as unknown[][]).map((row) => ({
-      memory_id: String(row[idx("memory_id")]),
-      type: String(row[idx("type")]),
-      display: String(row[idx("display")]),
-      agent: String(row[idx("agent")]),
-      created_at: String(row[idx("created_at")]),
-      score: Number(row[idx("final_score")]),
-    }));
+      const memories = (result.values as unknown[][]).map((row) => {
+        const tags = row[idx("tags")];
+        return {
+          memory_id: String(row[idx("memory_id")]),
+          type: String(row[idx("type")]),
+          title: String(row[idx("title")]),
+          // Return concise evidence, not the entire meeting note, to keep the
+          // agent's context focused and its tool payload bounded.
+          content_excerpt: String(row[idx("content")]).slice(0, 800),
+          tags: Array.isArray(tags) ? tags.map((tag) => String(tag)) : [],
+          agent: String(row[idx("agent")]),
+          created_at: String(row[idx("created_at")]),
+          score: Number(row[idx("final_score")]),
+        };
+      });
 
-    return { memories };
-  },
+      return { memories };
+    },
+  });
+}
+
+/** Long-term memory: hybrid relevance only, with no time decay. */
+export const recallLongTerm = createRecallTool({
+  id: "recall_long_term_memory",
+  description:
+    "Recall relevant past memories using hybrid keyword and semantic search. " +
+    "This is long-term memory: it does not favor newer records over older ones.",
+  timeAware: false,
+});
+
+/** Episodic memory: hybrid relevance weighted by recency. */
+export const recall = createRecallTool({
+  id: "recall",
+  description:
+    "Recall memories from previous sessions using hybrid search (exact " +
+    "keyword + semantic similarity, recency-weighted). Use at the start of " +
+    "a task to check for prior decisions, patterns, or blockers.",
+  timeAware: true,
 });
