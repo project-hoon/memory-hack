@@ -6,6 +6,12 @@ Build a Mastra agent whose answer changes correctly when its time-stamped Elasti
 
 The product demo now compares three identical-prompt modes: no memory, hybrid long-term memory (`FORK → FUSE`), and time-aware episodic memory (`FORK → FUSE → DECAY`).
 
+## Product framing
+
+The product is **elements-decision-mentat**. A Mentat is the Dune-inspired archetype of a trained human adviser who computes vast context beside a decision-maker. In this product, the founder remains the decision-maker; the Mentat is the always-on decision aide that retrieves years of meeting history, detects what has changed, and presents supporting or contradicting evidence. It should never be framed as an autonomous executive or as merely a chat-history store.
+
+The custom comparison UI streams all three agent responses. For long-term and episodic cards, its expandable evidence panel must show only the `tool-result` memories that the corresponding agent actually received through `recall_long_term_memory` or `recall` during that response—never a separate, cosmetic search.
+
 ## Current technical decision
 
 Start from `starter-projects/advanced`, not from scratch. It already contains the hackathon-critical retrieval path:

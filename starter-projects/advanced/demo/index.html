@@ -3,52 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Founder Memory — Decision Comparison</title>
+    <title>elements-decision-mentat</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <main>
-      <header>
-        <p class="eyebrow">FOUNDER DECISION MEMORY</p>
-        <h1>Same question. Three levels of memory.</h1>
-        <p class="lede">Compare a general answer, long-term retrieval, and time-aware episodic memory from the same founder history.</p>
+      <header class="hero">
+        <div class="brand-row">
+          <a class="wordmark" href="/" aria-label="elements-decision-mentat home">
+            <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>elements<span class="wordmark-slash">/</span>decision<span class="wordmark-slash">/</span>mentat</span>
+          </a>
+          <p class="run-state"><span></span>DECISION INTELLIGENCE · ONLINE</p>
+        </div>
+        <div class="hero-copy">
+          <h1>Your founder <em>Mentat.</em></h1>
+          <p class="lede">A decision aide that recalls years of founder context—then surfaces the evidence, reversal, or counterargument that matters now.</p>
+        </div>
       </header>
 
       <form id="question-form">
-        <label for="question">Decision question</label>
+        <div class="form-heading">
+          <label for="question">Decision prompt</label>
+          <span>ONE QUESTION · THREE REASONING MODES</span>
+        </div>
         <div class="question-row">
           <textarea id="question" rows="3">Given our founder history, should we keep investing in the self-serve Excel product or reconsider our go-to-market strategy?</textarea>
-          <button id="submit" type="submit">Compare answers</button>
+          <button id="submit" type="submit"><span>Run comparison</span><b>↗</b></button>
         </div>
         <p id="status" role="status">Each column receives exactly the same question.</p>
       </form>
 
       <section class="comparison" aria-label="Founder memory comparison">
-        <article class="answer-card no-memory">
-          <div class="card-topline"><span>01</span><span class="mode">NO MEMORY</span></div>
-          <h2>General advisor</h2>
-          <p class="mechanism">Same model · no Elasticsearch recall</p>
+        <article class="answer-card no-memory" data-layer="01">
+          <div class="card-topline"><span>01 / BASELINE</span><span class="mode">NO MEMORY</span></div>
+          <h2>Blank context</h2>
+          <p class="mechanism">Same model · no Elasticsearch recall · no prior evidence</p>
           <div class="answer" id="noMemory">Ask the question to compare.</div>
         </article>
 
-        <article class="answer-card long-term">
-          <div class="card-topline"><span>02</span><span class="mode">LONG-TERM MEMORY</span></div>
-          <h2>Searches the archive</h2>
-          <p class="mechanism">Elasticsearch · FORK → FUSE</p>
+        <article class="answer-card long-term" data-layer="02">
+          <div class="card-topline"><span>02 / RETRIEVAL</span><span class="mode">LONG-TERM MEMORY</span></div>
+          <h2>Archive recall</h2>
+          <p class="mechanism">Elasticsearch · FORK → FUSE · history as evidence</p>
+          <section class="recall-panel" id="longTermMemory-recall" hidden aria-label="Long-term memory context">
+            <button class="recall-toggle" type="button" aria-expanded="false" aria-controls="longTermMemory-evidence">
+              <span class="recall-label">Founder archive</span><span class="recall-state">Waiting for recall</span><b aria-hidden="true">+</b>
+            </button>
+            <div class="recall-details" id="longTermMemory-evidence" hidden></div>
+          </section>
           <div class="answer" id="longTermMemory">Ask the question to compare.</div>
         </article>
 
-        <article class="answer-card episodic">
-          <div class="card-topline"><span>03</span><span class="mode">EPISODIC MEMORY</span></div>
-          <h2>Understands what changed</h2>
-          <p class="mechanism">Elasticsearch · FORK → FUSE → DECAY</p>
+        <article class="answer-card episodic" data-layer="03">
+          <div class="card-topline"><span>03 / MENTAT</span><span class="mode">CONTEXT OVER TIME</span></div>
+          <h2>Context over time</h2>
+          <p class="mechanism">Elasticsearch · FORK → FUSE → DECAY · changing context</p>
+          <section class="recall-panel" id="episodicMemory-recall" hidden aria-label="Episodic memory context">
+            <button class="recall-toggle" type="button" aria-expanded="false" aria-controls="episodicMemory-evidence">
+              <span class="recall-label">Mentat evidence</span><span class="recall-state">Waiting for recall</span><b aria-hidden="true">+</b>
+            </button>
+            <div class="recall-details" id="episodicMemory-evidence" hidden></div>
+          </section>
           <div class="answer" id="episodicMemory">Ask the question to compare.</div>
         </article>
       </section>
 
       <footer>
-        <p><strong>Demo proof:</strong> Open Mastra Studio after the comparison and show the episodic agent’s <code>recall</code> tool trace.</p>
-        <a href="http://localhost:4111" target="_blank" rel="noreferrer">Open Mastra Studio ↗</a>
+        <p><strong>Trace proof:</strong> Inspect the episodic agent’s <code>recall</code> trace in Mastra Studio.</p>
+        <a href="http://localhost:4111" target="_blank" rel="noreferrer">Open Mastra Studio <span>↗</span></a>
       </footer>
     </main>
     <script src="/vendor/dompurify.js"></script>
