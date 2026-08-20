@@ -12,7 +12,7 @@ The product is **elements-decision-mentat**. A Mentat is the Dune-inspired arche
 
 The custom comparison UI streams both agent responses. Its expandable Mentat evidence panel must show only the `tool-result` memories that the episodic agent actually received through `recall` during that response—never a separate, cosmetic search.
 
-The presentation is the home route (`/`). It is a deliberately minimal two-column story: the left describes Mentat as a decision aide for founders who repeatedly decide and change direction; the right displays large card-news examples for the seven Founder Memory types. The live before/after comparison is at `/demo`.
+The presentation is the home route (`/`). It is a deliberately minimal two-column story: the left describes Mentat as a decision aide for founders who repeatedly decide and change direction; the right displays large card-news examples for the seven Founder Memory types. Each card uses a real imported record's English `title` and `content`; only lengthy content is shortened without changing its meaning. The live before/after comparison is at `/demo`.
 
 ## Current technical decision
 
