@@ -6,11 +6,9 @@ const submit = document.querySelector("#submit");
 const status = document.querySelector("#status");
 const answerNodes = {
   noMemory: document.querySelector("#noMemory"),
-  longTermMemory: document.querySelector("#longTermMemory"),
   episodicMemory: document.querySelector("#episodicMemory"),
 };
 const recallPanels = {
-  longTermMemory: document.querySelector("#longTermMemory-recall"),
   episodicMemory: document.querySelector("#episodicMemory-recall"),
 };
 const memoryKeys = new Set(Object.keys(recallPanels));
@@ -109,7 +107,7 @@ function showRecall(key, memories) {
 
   const note = document.createElement("p");
   note.className = "recall-note";
-  const mode = key === "episodicMemory" ? "Time-weighted recall returned" : "Hybrid recall returned";
+  const mode = "Time-weighted recall returned";
   note.textContent = memories.length
     ? `${mode} the following ${memories.length} memories for this answer.`
     : "Recall completed, but no relevant prior memory was returned.";
@@ -175,7 +173,7 @@ form.addEventListener("submit", async (event) => {
 
   submit.disabled = true;
   submit.querySelector("span").textContent = "Reasoning…";
-  status.textContent = "Running the same prompt through all three reasoning modes…";
+  status.textContent = "Running the same prompt with and without Mentat memory…";
   resetAnswers();
   clearRecallPanels();
 

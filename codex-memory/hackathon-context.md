@@ -4,13 +4,15 @@
 
 Build a Mastra agent whose answer changes correctly when its time-stamped Elasticsearch memory changes. The final demo must compare the same prompt with and without the relevant memory, and show the Mastra Studio trace.
 
-The product demo now compares three identical-prompt modes: no memory, hybrid long-term memory (`FORK → FUSE`), and time-aware episodic memory (`FORK → FUSE → DECAY`).
+The product demo compares two identical-prompt modes: no memory and time-aware episodic memory (`FORK → FUSE → DECAY`). This makes the before/after outcome legible within the 1–2 minute presentation.
 
 ## Product framing
 
 The product is **elements-decision-mentat**. A Mentat is the Dune-inspired archetype of a trained human adviser who computes vast context beside a decision-maker. In this product, the founder remains the decision-maker; the Mentat is the always-on decision aide that retrieves years of meeting history, detects what has changed, and presents supporting or contradicting evidence. It should never be framed as an autonomous executive or as merely a chat-history store.
 
-The custom comparison UI streams all three agent responses. For long-term and episodic cards, its expandable evidence panel must show only the `tool-result` memories that the corresponding agent actually received through `recall_long_term_memory` or `recall` during that response—never a separate, cosmetic search.
+The custom comparison UI streams both agent responses. Its expandable Mentat evidence panel must show only the `tool-result` memories that the episodic agent actually received through `recall` during that response—never a separate, cosmetic search.
+
+The presentation is the home route (`/`). It is a deliberately minimal two-column story: the left describes Mentat as a decision aide for founders who repeatedly decide and change direction; the right displays large card-news examples for the seven Founder Memory types. The live before/after comparison is at `/demo`.
 
 ## Current technical decision
 

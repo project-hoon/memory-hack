@@ -11,6 +11,9 @@ main { width: min(1440px, calc(100% - 48px)); margin: 0 auto; padding: 22px 0 42
 .mark i { display: block; height: 4px; background: #b7d752; }
 .mark i:nth-child(2) { width: 72%; background: #ed834d; }
 .mark i:nth-child(3) { width: 42%; background: #cdd1b8; }
+.brand-actions { display: flex; align-items: center; gap: 18px; }
+.presentation-link { color: #c8df71; font-size: .62rem; font-weight: 800; letter-spacing: .05em; text-decoration: none; text-transform: uppercase; }
+.presentation-link:hover { color: #edf6c5; }
 .run-state { display: flex; align-items: center; gap: 8px; margin: 0; color: #aeb6a3; font-size: .62rem; letter-spacing: .11em; }
 .run-state span { width: 7px; height: 7px; border-radius: 99px; background: #b8d950; box-shadow: 0 0 12px #b8d950; }
 .hero-copy { display: flex; max-width: none; align-items: baseline; justify-content: space-between; gap: 28px; margin-top: 28px; }
@@ -29,10 +32,9 @@ button { display: flex; min-width: 177px; align-items: center; justify-content: 
 button:hover:not(:disabled) { background: #d0ed6d; transform: translate(-2px, -2px); box-shadow: 4px 4px 0 #ed834d; }
 button b { font-size: 1.25rem; font-weight: 400; } button:disabled { opacity: .6; cursor: wait; }
 #status { min-height: 1.3rem; margin: 11px 0 0; color: #8e9883; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: .78rem; }
-.comparison { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .answer-card { position: relative; min-height: 430px; display: flex; flex-direction: column; overflow: hidden; padding: 20px; border: 1px solid #3b4136; background: #1a1e18; }
 .answer-card::after { position: absolute; right: -8px; bottom: -30px; color: rgba(255, 255, 255, .025); font-family: Georgia, serif; font-size: 11rem; content: attr(data-layer); pointer-events: none; }
-.answer-card.long-term { border-color: #766940; background: #1d1e17; }
 .answer-card.episodic { border-color: #91ad48; background: linear-gradient(145deg, #26311a, #1a1e18 65%); box-shadow: 8px 8px 0 rgba(144, 174, 67, .15); }
 .card-topline { display: flex; justify-content: space-between; color: #8d9682; font-size: .65rem; font-weight: 800; letter-spacing: .07em; }
 h2 { margin: 38px 0 8px; font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 400; letter-spacing: -.05em; }
@@ -85,6 +87,7 @@ footer a span { padding-left: 4px; color: #ed834d; } code { color: #d4ec7d; }
   .question-row { flex-direction: column; }
   button { min-height: 48px; }
   .brand-row, .form-heading { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .brand-actions { width: 100%; justify-content: space-between; }
   .hero-copy { display: block; margin-top: 24px; }
   h1 { font-size: clamp(2.2rem, 10vw, 3.4rem); }
   .lede { margin-top: 10px; }

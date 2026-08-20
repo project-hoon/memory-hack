@@ -13,7 +13,6 @@ import { Mastra } from "@mastra/core";
 import { Observability, MastraStorageExporter } from "@mastra/observability";
 import {
   advancedMemoryAgent,
-  founderLongTermMemoryAgent,
   founderNoMemoryAgent,
 } from "./agents/advanced-agent";
 import { movieRecBare, movieRecCatalog, movieRecPersonal } from "./agents/movie-agents";
@@ -21,7 +20,6 @@ import { movieRecBare, movieRecCatalog, movieRecPersonal } from "./agents/movie-
 export const mastra = new Mastra({
   agents: {
     founderNoMemoryAgent,
-    founderLongTermMemoryAgent,
     advancedMemoryAgent,
     movieRecBare,
     movieRecCatalog,

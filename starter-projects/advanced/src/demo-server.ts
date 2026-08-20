@@ -1,7 +1,7 @@
 /**
  * Lightweight local comparison UI for the hacknight demo.
  * Keep `npm run dev` running in one terminal, then run `npm run demo` in
- * another. This server proxies the three same-question calls to Mastra so the
+ * another. This server proxies the two same-question calls to Mastra so the
  * browser never handles credentials or cross-origin API details.
  */
 import { createServer } from "node:http";
@@ -23,7 +23,6 @@ const vendorFiles: Record<string, string> = {
 
 const agents = [
   { ids: ["founder-no-memory-agent", "founderNoMemoryAgent"], key: "noMemory" },
-  { ids: ["founder-long-term-memory-agent", "founderLongTermMemoryAgent"], key: "longTermMemory" },
   { ids: ["advanced-memory-agent", "advancedMemoryAgent"], key: "episodicMemory" },
 ] as const;
 
@@ -300,7 +299,11 @@ createServer(async (request, response) => {
     return;
   }
 
-  const requested = url.pathname === "/" ? "index.html" : url.pathname.slice(1);
+  const requested = url.pathname === "/" || url.pathname === "/presentation" || url.pathname === "/presentation/"
+    ? "presentation/index.html"
+    : url.pathname === "/demo" || url.pathname === "/demo/"
+      ? "index.html"
+      : url.pathname.slice(1);
   const filename = normalize(join(demoDir, requested));
   if (!filename.startsWith(demoDir)) {
     response.writeHead(403);

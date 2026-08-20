@@ -14,7 +14,10 @@
             <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
             <span>elements<span class="wordmark-slash">/</span>decision<span class="wordmark-slash">/</span>mentat</span>
           </a>
-          <p class="run-state"><span></span>DECISION INTELLIGENCE · ONLINE</p>
+          <div class="brand-actions">
+            <a class="presentation-link" href="/">Home ↗</a>
+            <p class="run-state"><span></span>DECISION INTELLIGENCE · ONLINE</p>
+          </div>
         </div>
         <div class="hero-copy">
           <h1>Your founder <em>Mentat.</em></h1>
@@ -25,7 +28,7 @@
       <form id="question-form">
         <div class="form-heading">
           <label for="question">Decision prompt</label>
-          <span>ONE QUESTION · THREE REASONING MODES</span>
+          <span>ONE QUESTION · TWO REASONING MODES</span>
         </div>
         <div class="question-row">
           <textarea id="question" rows="3">Given our founder history, should we keep investing in the self-serve Excel product or reconsider our go-to-market strategy?</textarea>
@@ -42,21 +45,8 @@
           <div class="answer" id="noMemory">Ask the question to compare.</div>
         </article>
 
-        <article class="answer-card long-term" data-layer="02">
-          <div class="card-topline"><span>02 / RETRIEVAL</span><span class="mode">LONG-TERM MEMORY</span></div>
-          <h2>Archive recall</h2>
-          <p class="mechanism">Elasticsearch · FORK → FUSE · history as evidence</p>
-          <section class="recall-panel" id="longTermMemory-recall" hidden aria-label="Long-term memory context">
-            <button class="recall-toggle" type="button" aria-expanded="false" aria-controls="longTermMemory-evidence">
-              <span class="recall-label">Founder archive</span><span class="recall-state">Waiting for recall</span><b aria-hidden="true">+</b>
-            </button>
-            <div class="recall-details" id="longTermMemory-evidence" hidden></div>
-          </section>
-          <div class="answer" id="longTermMemory">Ask the question to compare.</div>
-        </article>
-
-        <article class="answer-card episodic" data-layer="03">
-          <div class="card-topline"><span>03 / MENTAT</span><span class="mode">CONTEXT OVER TIME</span></div>
+        <article class="answer-card episodic" data-layer="02">
+          <div class="card-topline"><span>02 / MENTAT</span><span class="mode">CONTEXT OVER TIME</span></div>
           <h2>Context over time</h2>
           <p class="mechanism">Elasticsearch · FORK → FUSE → DECAY · changing context</p>
           <section class="recall-panel" id="episodicMemory-recall" hidden aria-label="Episodic memory context">
